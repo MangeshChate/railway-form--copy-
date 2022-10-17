@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    
+    background-color: white;
+    height: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main{
+    display: none;
+}
+
+.main_bar {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    /* align-items: center; */
+
+
+}
+
+
+
+
+.s-logo, .l-logo img {
+    padding:2rem
+}
+
+
+
+.up-bar  {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+
+}
+
+.up-bar-list {
+    display: flex;
+    width: 50rem;
+    justify-content: space-around;
+}
+
+.down-bar-list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.container-c {
+    background-image: url("https://gumlet.assettype.com/swarajya%2F2018-11%2F6aca5727-7409-4625-a415-e6a081ed0fbd%2FDtEGOksUwAApBt3.jpg?q=75&auto=format%2Ccompress&w=1200");
+     background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding: 3rem;
+
+
+   
+
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.form {
+    position: relative;
+    transition: .3s;
+}
+
+.form:hover {
+    transform: translateY(-1rem);
+    box-shadow: 2rem #201c29;
+    box-shadow: -1rem 0 3rem #000;
+
+
+}
+
+
+.form-label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.upper-form ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mid input {
+  padding: 5px;
+  margin: 8px;
+  width: 15rem;
+}
+
+.form {
+    width: 40rem;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.f-con{
+    display: flex;
+    justify-content: center;
+}
+.f-cen{
+    display: flex;
+    justify-content: center;
+}
+.f-list{
+    display:flex;
+    flex-direction: column;
+}
+.long-f{
+    width: 19rem;
+}
+.form-bottom {
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+
+}
+
+.service{
+    background-color: grey;
+    padding: 5rem;
+    
+}
+.icon-heading h1{
+    display: flex;
+    
+    justify-content: center;
+  
+   
+    
+    align-items: center;
+  
+}
+.icon-logo{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: bolder;
+    margin: 3rem;
+    align-items: center;
+  
+}
+.icon-logo i{
+    padding: 2rem;
+    color: #252525;
+}
+.icon-logo{
+    justify-content: space-evenly;
+}
+
+.cards-c {
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.card-c {
+    background-color: antiquewhite;
+    width: 10rem;
+    height: 30rem;
+    justify-content: space-around;
+}
+.card-body-c {
+    display: flex;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.card-list-c {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+    color: white;
+    /* font-family: 'DM Mono',monospace; */
+
+}
+
+.card-list-c::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card-list-c::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+}
+
+.card-list-c::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+
+.card-c {
+    height: 600px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+
+.card-c:focus-within~.card-c,
+.card-c:hover~.card-c {
+    transform: translateX(130px);
+}
+
+.card-c:hover {
+    transform: translateY(-1rem);
+}
+
+.card-c:not(:first-child) {
+    margin-left: -130px;
+}
+
+
+.card-header-c {
+    margin-bottom: auto;
+}
+
+.card-header-c p {
+    font-size: 14px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+}
+
+.card-header-c h2 {
+    font-size: 20px;
+    margin: .25rem 0 auto;
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card-header-c h2:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.card-center-c {
+    display: flex;
+    justify-content: center;
+}
+
+/* /* ===========================foooter=================================== */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c215d;
+}
+
+.footer-mid {
+    display: flex;
+    align-items: center;
+}
+
+.footer-head {
+    font-size: 1rem;
+    color: white;
+
+}
+
+table,
+tr,
+td {
+    font-weight: bold;
+    padding: 2rem;
+    font-size: large;
+    color: white;
+
+}
+
+.footer-end {
+    color: white;
+}
+
+.icon-table {
+    justify-content: space-between;
+}
+.form-show{
+    display: none;
+}
+.main-form-2{
+    display: none;
+}
+
+/* =====================================collide-nav============================================================== */
+
+/* ---------------------------------------------------media quries--------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    .s-logo , .main_bar , .l-logo{
+        display: none;
+    }
+
+    nav {
+    padding: 1rem;
+    background-color: #2c215d;
+    }
+    .main{
+        display: flex;
+        align-items: center;
+    }
+    .container-c{
+        display: none;
+    }
+    .main-form-2{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2rem 0 0 0;
+
+
+    }
+    .main-form-2 .form-bottom{
+        flex-direction: column;
+        display: flex;
+
+    }
+
+   
+    .main-form-2 .mid .f-con,.f-cen  {
+        flex-direction: column;
+        
+    }
+  .f-list ,.form-bottom{
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .service{
+      display:none;
+  }
+  .card-list-c{
+      flex-direction: column;
+  }
+}
